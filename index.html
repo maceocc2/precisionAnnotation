@@ -121,7 +121,7 @@
                     background-color: #29adfa; /* Slightly darker green on hover */
                 }
     </style>
- <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
  <script>
     function onSubmit(token) {
       document.getElementById("contact-form").submit();
@@ -221,7 +221,7 @@
                 <a href="#top" style="text-decoration: none; font-size: 14px; z-index: 1000;">[Back to Top]</a>
             </div>
             <div class="card" , style="flex: 1; width:50%">
-                <img src="Image_examples.png" alt="image annotation examples" style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <img src="image_annotation.png" alt="image annotation examples" style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
             </div>
         </section>
     <hr>
@@ -316,7 +316,7 @@
             <a href="#top" style="text-decoration: none; font-size: 14px; z-index: 1000;">[Back to Top]</a>
         </div>
         <div class="card" , style="flex: 1;">
-            <img src="Audio_Annotation.png" alt="example audio annotations" style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <img src="audio_annotation.png" alt="example audio annotations" style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
         </div>
     </section>
     <hr>
@@ -361,8 +361,8 @@
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                    <div class="g-recaptcha" data-sitekey="6Le87tEqAAAAAMaKMiNyD89dyWEbG5fAa3kqA70J"></div>
-                    <button type="submit">Submit</button>
+                <div class="g-recaptcha" data-sitekey="6Ldq5NEqAAAAAC9bH7cnqO_W41u5O6VE3NmQzP7n" data-action="LOGIN"></div>
+                <button type="submit">Submit</button>
             </form>
         </div>
         <div style="flex: 1; width:50%">
