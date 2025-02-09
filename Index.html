@@ -121,6 +121,12 @@
                     background-color: #29adfa; /* Slightly darker green on hover */
                 }
     </style>
+ <script src="https://www.google.com/recaptcha/api.js"></script>
+ <script>
+    function onSubmit(token) {
+      document.getElementById("contact-form").submit();
+    }
+  </script>
 </head>
 <body>
 
@@ -355,7 +361,11 @@
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit">Submit</button>
+                <button class="g-recaptcha" 
+                    data-sitekey="6Le87tEqAAAAAMaKMiNyD89dyWEbG5fAa3kqA70J" 
+                    data-callback='onSubmit' 
+                    data-action='submit'>Submit</button>
+
             </form>
         </div>
         <div style="flex: 1; width:50%">
